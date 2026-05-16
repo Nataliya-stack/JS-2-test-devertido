@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style>
+        body {
+            background-image: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
+            width: 100%;
+        }
+     </style>
+     <title>JS - 2</title>
+</head>
+<body class="p-4 md:p-8 flex justify-center">
+
+    <div class="w-full md:w-4/6 mt-4">
+        <h1 class="text-[#9d5a44] text-2xl font-bold text-center md:text-left">TEST DIVERTIDO</h1>
+        
+        <p id="uno" class="mt-6 font-semibold text-gray-800">1. Ordena estos animales en orden de preferencia:</p> 
+            <blockquote class="ml-0 md:ml-12 mt-3 space-y-3">
+                <p class="flex items-center gap-4">
+                    <label id="vaca" for="vaca-value" class="w-1/3 md:w-1/2 text-gray-700">Vaca:</label>
+                    <input id="vaca-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="number">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="tigre" for="tigre-value" class="w-1/3 md:w-1/2 text-gray-700">Tigre:</label>
+                    <input id="tigre-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="number">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="obeja" for="obeja-value" class="w-1/3 md:w-1/2 text-gray-700">Oveja:</label>
+                    <input id="obeja-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="number">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="caballo" for="caballo-value" class="w-1/3 md:w-1/2 text-gray-700">Caballo:</label>
+                    <input id="caballo-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="number">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="mono" for="mono-value" class="w-1/3 md:w-1/2 text-gray-700">Mono: </label>
+                    <input id="mono-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="number">
+                </p>
+            </blockquote>
+            
+        <p id="dos" class="mt-6 font-semibold text-gray-800">2. Escribe una palabra que describа lo siguiente:</p>
+            <blockquote class="ml-0 md:ml-12 mt-3 space-y-3">
+                <p class="flex items-center gap-4">
+                    <label id="perro" for="perro-value" class="w-1/3 md:w-1/2 text-gray-700">Perro:</label>
+                    <input id="perro-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="text">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="gato" for="gato-value" class="w-1/3 md:w-1/2 text-gray-700">Gato:</label>
+                    <input id="gato-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="text">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="rata" for="rata-value" class="w-1/3 md:w-1/2 text-gray-700">Rata:</label>
+                    <input id="rata-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="text">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="cafe" for="cafe-value" class="w-1/3 md:w-1/2 text-gray-700">Cafe:</label>
+                    <input id="cafe-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="text">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="mar" for="mar-value" class="w-1/3 md:w-1/2 text-gray-700">Mar: </label>
+                    <input id="mar-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="text">
+                </p>
+            </blockquote>
+            
+        <p id="tres" class="mt-6 font-semibold text-gray-800">3. Indica alguien importante para ti, que tu sugiera este color:</p>
+            <blockquote class="ml-0 md:ml-12 mt-3 space-y-3">
+                <p class="flex items-center gap-4">
+                    <label id="amarillo" for="amarillo-value" class="w-1/3 md:w-1/2 text-gray-700">Amarillo:</label>
+                    <input id="amarillo-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="text">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="naranja" for="naranja-value" class="w-1/3 md:w-1/2 text-gray-700">Naranja:</label>
+                    <input id="naranja-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="text">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="blanco" for="blanco-value" class="w-1/3 md:w-1/2 text-gray-700">Blanco:</label>
+                    <input id="blanco-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="text">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="rojo" for="rojo-value" class="w-1/3 md:w-1/2 text-gray-700">Rojo:</label>
+                    <input id="rojo-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="text">
+                </p>
+                <p class="flex items-center gap-4">
+                    <label id="verde" for="verde-value" class="w-1/3 md:w-1/2 text-gray-700">Verde: </label>
+                    <input id="verde-value" class="w-2/3 md:w-6/12 border border-gray-600 rounded-sm text-[#9d5a44] pl-4 py-1 bg-white" type="text">
+                </p>
+            </blockquote>
+            
+        <p class="mt-6 flex justify-center md:justify-start">
+            <button id="myButton" onclick="calcular()" class="w-full md:w-auto border border-gray-600 rounded-sm px-6 py-2 bg-[#9d5a44] text-white font-bold outline-offset-2 cursor-pointer active:scale-95 transition-transform" type="button">
+            RESULTADOS
+            </button>
+        </p>    
+    </div>
+   
+    <script src="./js/app.js"></script>
+</body>
+</html>
